@@ -9,7 +9,7 @@ def encryption(file, password):
 
     pyAesCrypt.encryptFile(
         str(file),
-        str(os.path.splitext(file)[0]),
+        str(file) + '.crp',
         password,
         budder_size
     )
@@ -37,4 +37,4 @@ def walking_by_dir(dir, password):
             walking_by_dir(dir, password)
 
 password = input("Введите пароль для шифрования: >> ")
-walking_by_dir("/home/egn13/Python/encryption/files", password)
+walking_by_dir("Путь к директории шифрования", password)

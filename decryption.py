@@ -37,4 +37,4 @@ def walking_by_dir(dir, password):
             walking_by_dir(dir, password)
 
 password = input("Введите пароль для дешифрования: >> ")
-walking_by_dir("/home/egn13/Python/encryption/files", password)
+walking_by_dir("Путь к директории шифрования", password)
